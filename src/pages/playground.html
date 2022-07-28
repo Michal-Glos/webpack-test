@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend</title>
+</head>
+
+<body class="playground">
+    <main>
+        <h1>Forms playground</h1>
+        <form action="https://dev.cotenfrontend.pl" class="form">
+            <p>
+                <label for="firstName">Your Name:</label>
+                <input required class="form__item" type="text" placeholder="Please enter your name" id="firstName"
+                    name="firstName">
+            </p>
+
+            <p>
+                <label>Your Last Name:
+                    <input required class="form__item" placeholder="Please enter your lastname" id="lastName" name="lastName">
+                </label>
+            </p>
+
+            <p>
+                <label>Your phone number:
+                    <input required class="form__item" placeholder="Please enter your phone number" id="phone" name="phone" type="tel">
+                </label>
+            </p>
+
+            <p>
+                <label>E-mail:
+                    <input required class="form__item" placeholder="Please enter your E-mail" id="email" name="email" type="email">
+                </label>
+            </p>
+
+            <p>
+                <label>Range:
+                    <input class="form__item" id="range" name="range" type="range" min="0" max="100" step="1">
+                </label>
+            </p>
+
+            <p>
+                <label>Password:
+                    <input required class="form__item" id="password" name="password" type="password">
+                </label>
+            </p>
+
+            <p>
+                <label>Avatar:
+                    <input class="form__item" id="avatar" name="avatar" type="file">
+                </label>
+            </p>
+
+            <fieldset>
+                <legend>Address</legend>
+                <p>
+                    <label>City:
+                        <input class="form__item" placeholder="Please enter your street name" id="cityName"
+                            name="cityName">
+                    </label>
+                </p>
+                <p>
+                    <label>Street Name:
+                        <input class="form__item" placeholder="Please enter your street name" id="streetName"
+                            name="streetName">
+                    </label>
+                </p>
+            </fieldset>
+
+            <p>
+                <label for="yourStory"> Your story: </label>
+                <textarea id="yourStory" name="yourStory">My story is...</textarea>
+            </p>
+            <p>
+                <label for="fastfood">Pick one fastfood: </label>
+                    <select name="fastfood" id="fastfood">
+                        <option value="fastfood-1">Kebab</option>
+                        <option value="fastfood-2">Burger</option>
+                        <option value="fastfood-3">Pizza</option>
+                        <option value="fastfood-4">Chinese food</option>
+                    </select>
+            </p>
+
+            <fieldset>
+                <legend>Favourite band</legend>
+                <p><label><input name="band" type="radio" value="korn"> KoRn </label> </p>
+                <p><label><input name="band" type="radio" value="slipknot"> Slipknot </label> </p>
+                <p><label><input name="band" type="radio" value="chevelle"> Chevelle </label> </p>
+                <p><label><input name="band" type="radio" value="trivium"> Trivium </label> </p>
+                <p><label><input name="band" type="radio" value="seether"> Seether </label> </p>
+                <p><label><input name="band" type="radio" value="hellyeah"> Hellyeah </label> </p>
+            </fieldset>
+
+            <p>
+                <label><input name="agreement" type="checkbox" value="agree">I agree</label>
+            </p>
+            <p>
+                <label><input name="disagree" type="checkbox" value="disagree">I do not agree</label>
+            </p>
+
+
+            <p>
+                <input type="submit" value="Send" />
+            </p>
+
+        </form>
+    </main>
+
+
+
+
+
+</body>
+
+</html>

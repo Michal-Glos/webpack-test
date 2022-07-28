@@ -1,0 +1,27 @@
+.week-summary {
+    padding: 16px;
+    border: 1px rgb(255, 0, 0) solid;
+    margin-bottom: 16px;
+
+    &__special {
+        border-color: hotpink;
+    }
+
+    &__description {
+        color: black;
+    }
+
+    &__title {
+        color: blueviolet;
+
+        &::before {
+            content: "";
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            background: rgb(121, 0, 0);
+            border-radius: 50%;
+            margin-right: 6px;
+        }
+    }
+}
