@@ -3,6 +3,7 @@
 @import "_variables";
 @import "modules/week-summary.scss";
 @import "modules/playground.scss";
+@import "modules/spin.scss";
 
 
 :root {
@@ -197,6 +198,7 @@ img {
         display: flex;
         justify-content: space-around;
         align-items: center;
+        margin: 0px;
     }
 
     .navigation__link {

@@ -179,3 +179,11 @@ for (let myProperty in michal) {
 for (let element of myArray) {
     console.log(element);
 }
+
+
+document.querySelector(".spin__button--js").addEventListener("click", (e) => {
+	document.querySelector("div").getAnimations().forEach((anim) => {
+		anim.cancel();
+		anim.play();
+	});
+});
