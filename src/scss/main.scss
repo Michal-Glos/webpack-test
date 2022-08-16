@@ -4,6 +4,7 @@
 @import "modules/week-summary.scss";
 @import "modules/playground.scss";
 @import "modules/spin.scss";
+@import "modules/kornlogoanimation.scss";
 
 
 :root {
@@ -51,7 +52,7 @@ p {
 
 
 a {
-    color: palevioletred;
+    color: #750092;
 }
 
 nav a {
@@ -159,6 +160,11 @@ img {
 
 }
 
+.video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .footer {
     max-width: 1000px;

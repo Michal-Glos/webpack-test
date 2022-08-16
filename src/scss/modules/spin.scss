@@ -21,8 +21,8 @@
         rotate: 0deg;
     }
 
-    10%,
-    90% {
+    20%,
+    80% {
         rotate: 180deg;
     }
 
@@ -40,10 +40,10 @@
     max-width: 200px;
     max-height: 134px;
     aspect-ratio: 1.3;
-    background-image: url('../assets/img/korn.png');
-    animation: combined 3s;
+    background-image: url('../assets/img/korn2.png');
+    animation: combined 3s infinite alternate-reverse;
     animation-fill-mode: forwards;
-    margin:32px 250px;
+    margin:32px 320px;
 }
 
 .spin__button {

@@ -187,3 +187,21 @@ document.querySelector(".spin__button--js").addEventListener("click", (e) => {
 		anim.play();
 	});
 });
+
+
+fetch('https://api.github.com/users/michal-glos/repos?sort=created&direction=asc')
+.then(resp => resp.json())
+.then(resp => {
+    for (let repo of resp) {
+        const {name, html_url} = repo;
+        const repositoryList = document.querySelector('.list--js');
+        const myTemplate = `<li>
+        ${name} <a href="${html_url}" title="link do repozytorium ${name} na githubie">Link do githuba</a>
+        </li>`;
+            repositoryList.innerHTML += myTemplate;    
+    }
+
+})
+.catch(error => {
+console.log('Nie udało się pobrać');
+})
